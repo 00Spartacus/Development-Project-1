@@ -1,0 +1,79 @@
+/* Feedback.css */
+
+body {   
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-container {
+
+    background-image: url('https://wallpapercave.com/wp/wp4398695.jpg');
+    /* background-image: url('https://wallpapercave.com/wp/wp4398691.png'); */
+    background-size: cover;
+    background-position: center; 
+   
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 5px 4px 8px rgb(25, 29, 25) ;
+}
+.feedback-container h2 {
+    text-align: center;
+    color:  #ffffff;
+    margin-bottom: 20px;
+}
+
+.feedback-message {
+    text-align: center;
+    color: green;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:  #ffffff;
+}
+
+.feedback-form .form-control {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.feedback-form textarea.form-control {
+    resize: none;
+}
+
+.feedback-form .submit-button {
+    background-color: #137be3;
+    color: white;
+    border: solid 1px #137be3;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+    width: 200px;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: float 2s ease-in-out infinite; /* Floating animation */
+  }
+
+.feedback-form .submit-button:hover {
+    background-color: #0056b3;
+}

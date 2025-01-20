@@ -1,0 +1,330 @@
+/* General Styling */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+/* Homepage Background Slider */
+.picture-containers{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: #000000;
+  display:contents;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  
+  height: 200%;
+  /* display: flex;
+  display: grid;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%; */
+}
+.heroj{
+  margin-top: 30px;
+}
+.picture-boxs {
+  width: 100%;
+  height: 100%px; /* Adjust the height as needed */
+  overflow: hidden;
+  border-radius: 8px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+object-fit: cover;
+}
+
+.picture-box img {
+  width: 100%;
+  height: 200%;
+  object-fit: cover;
+}
+
+/* .picture-box:hover {
+  transform: scale(1.05);
+} */
+
+/* Main Homepage Styling */
+/* .homepage {
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  padding: 15px 20px;
+  height: 120px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Main Section Styling with Animation */
+.main-section {
+  border: 1px solid #000000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+  border-radius: 8px;
+  /* background-image: url('https://wallpapercave.com/wp/U08GKyK.jpg'); */
+  /* background-image: url('https://i.ibb.co.com/rv5KXgS/img.jpg'); */
+  background-image: url('https://wallpapercave.com/wp/U08GKyK.jpg');
+  /* background-image: url('https://i.ibb.co.com/0CdzLM6/image.jpg'); */
+  background-size: cover;
+  
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.column {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  background-color: rgba(15, 119, 230, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .8);
+  width: 250px;
+}
+
+.column:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.column h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Hero Section Styling */
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content button {
+  background-color: #137be3;
+  color: white;
+  border: solid 1px #137be3;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+  width: 200px;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #04e600;
+  transform: translateY(-3px) scale(1.05);
+}
+.login-buttonh {
+  background-color: #29a1d0;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.about-buttonh
+{
+  background-color: #29a1d0;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.know-buttonh
+{
+  background-color: rgba(41, 161, 208, 0.5);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* Hero Section Button Styling */
+.hero-content button,
+.login-buttonh,
+.about-buttonh,
+.know-buttonh {
+  background-color: #137be3;
+  color: white;
+  border: solid 1px #137be3;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+  width: 200px;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: float 2s ease-in-out infinite; /* Floating animation */
+}
+
+/* Hover effects (optional) */
+.hero-content button:hover,
+.login-buttonh:hover,
+.about-buttonh:hover,
+.know-buttonh:hover {
+  background-color: #10e280;
+  transform: translateY(-3px) scale(1.05);
+}
+/* Keyframe animation for floating effect */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back to original position */
+  }
+}
+.new-sectionm {
+  display: flex;
+  flex-direction: column;  /* Ensure sections are stacked vertically */
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #3f12df; */
+  padding: 30px;
+  text-align: center;
+}
+
+.new-sectionm h2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.new-sectionm .column {
+  /* background-color: #0f77e6; */
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency as needed */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+  width: 80%;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.new-sectionm .column:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .7);
+}
+
+.new-sectionm .column a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.new-sectionm .column a:hover {
+  text-decoration: underline;
+}
+
+/* Style for the map container */
+
+/* Optional: you can add a responsive design for mobile */
+@media (max-width: 768px) {
+  .new-sectionm .column {
+    width: 90%;
+  }
+}
+/* Main map container */
+.map-container {
+  width: 100%;
+  padding: 20px;
+  /* background-color: #3f12df; Color for the background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin-top: 20px;
+}
+
+/* Styling for the map section */
+.map {
+  text-align: center;
+  color: white;
+}
+
+/* Styling for the Google Maps iframe container */
+.google-map-container {
+  width: 100%;
+  max-width: 100%;
+  height: 400px; /* Adjust height of the map */
+  margin: 20px 0; /* Add spacing between map and content */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide any content overflow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for a cleaner look */
+}
+
+/* Styling for the link below the map */
+.view-map-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  /* background-color: #6f7f92; */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the link */
+.view-map-link:hover {
+  background-color: #0d66cc;
+  transform: translateY(-2px);
+}
+
+/* Optional: Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .google-map-container {
+    height: 300px; /* Adjust map height on smaller screens */
+  }
+
+  .view-map-link {
+    padding: 10px 20px; /* Adjust button size for mobile */
+    font-size: 14px; /* Adjust text size */
+  }
+}
+

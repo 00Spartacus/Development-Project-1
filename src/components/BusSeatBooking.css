@@ -1,0 +1,148 @@
+/* BusSeatBooking.css */
+.booking-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.seat-demo {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bus-layout {
+    position: relative;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.driver-seat {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.seats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.seat {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.seat:hover {
+    opacity: 0.8;
+}
+
+.seat.male.vacant {
+    background-color: #b3d4ff;
+}
+
+.seat.female.vacant {
+    background-color: #ffd6e6;
+}
+
+.seat.booked {
+    background-color: #ffe066;
+    cursor: not-allowed;
+}
+
+.seat.occupied {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    border: 2px solid #007bff;
+    transform: scale(1.05);
+}
+
+.vacant-male {
+    background-color: #b3d4ff;
+}
+
+.vacant-female {
+    background-color: #ffd6e6;
+}
+
+.booked {
+    background-color: #ffe066;
+}
+
+.occupied {
+    background-color: #cccccc;
+}
+
+.book-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.book-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.book-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 10px;
+}

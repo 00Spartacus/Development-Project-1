@@ -1,0 +1,103 @@
+/* Scoped Styling for AssignDriverToBus */
+#assign-driver-to-bus {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('https://wallpapercave.com/wp/U08GKyK.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+#assign-driver-to-bus h1 {
+    text-align: center;
+    color: rgb(241, 203, 14);
+    margin-bottom: 30px;
+}
+
+#assign-driver-to-bus .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border : none;
+    /* border: 1px solid rgba(255, 255, 255, 0.3);  */
+}
+
+#assign-driver-to-bus label {
+    margin-bottom: 5px;
+    color: rgb(254, 253, 253);
+    font-size: 18px;
+}
+
+#assign-driver-to-bus .form-control {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 5px 0;
+}
+
+#assign-driver-to-bus button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#assign-driver-to-bus button:hover {
+    background-color: #0056b3;
+}
+
+#assign-driver-to-bus button + button {
+    margin-left: 10px;
+}
+
+#assign-driver-to-bus .assignment-item {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    background-color: transparent; /* Fully transparent background */
+    border-radius: 12px; 
+    margin-bottom: 10px; /* Spacing between items */
+    color: white; /* Ensuring text remains readable against the background */
+}
+
+#assign-driver-to-bus .assignment-item:last-child {
+    border-bottom: none;
+}
+
+
+#assign-driver-to-bus .assignment-item:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    #assign-driver-to-bus {
+        padding: 20px;
+    }
+
+    #assign-driver-to-bus button {
+        font-size: 14px;
+    }
+
+    #assign-driver-to-bus .form-control {
+        width: 100%;
+    }
+}

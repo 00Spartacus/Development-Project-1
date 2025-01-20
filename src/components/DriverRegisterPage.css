@@ -1,0 +1,83 @@
+/* General page styling */
+.driver-register-page {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure it takes up full screen height */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b71c1c;
+    color: white;
+    width: 100%;
+    padding: 15px;
+}
+
+.navbar .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Form styling */
+.driver-register-form {
+    background-image: url('https://i.ibb.co.com/rv5KXgS/img.jpg');
+    /* background-image: url('https://wallpapercave.com/wp/wp4470284.jpg'); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(10, 10, 0, 1);
+    border: solid 1px #000000;
+    max-width: 400px; /* Ensures the form does not stretch too wide */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Input styling */
+.driver-register-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(3, 3, 0, 0.3);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Button styling */
+.driver-register-form button {
+    padding: 10px 20px; /* Set padding to create a normal-sized button */
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Let the button size itself based on content */
+}
+
+.driver-register-form button:hover {
+    background-color: #0b3a84; /* Slightly darker blue on hover */
+}
+

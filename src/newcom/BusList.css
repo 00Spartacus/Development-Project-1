@@ -1,0 +1,115 @@
+/* Keyframe animation for sliding in from the right */
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* Move to original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Floating animation for bus-item */
+  @keyframes floatBusItem {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back to original position */
+    }
+  }
+  
+  .buses-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* h1 {
+    font-size: 30px;
+    color: #faf8f8;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #f8f5f5;
+  } */
+  
+  .buses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); */
+  }
+  
+  .bus-item {
+    
+    border-radius: 8px;
+    
+    padding: 2px;
+    width: 16%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #f8f6f6;
+    box-shadow: 1 3px 2px rgba(01, 2, 0, 1);
+    animation: slideInRight 1s ease-out, floatBusItem 2s ease-in-out infinite; /* Apply both animations */
+    opacity: 0; /* Initially hidden */
+    animation-fill-mode: both; /* Ensures the animation persists after completion */
+  }
+  
+  .bus-item:nth-child(odd) {
+    animation-delay: 0.2s; /* Stagger animation for a smoother effect */
+  }
+  
+  .bus-item:nth-child(even) {
+    animation-delay: 0.4s;
+  }
+  
+  .bus-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .bus-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .bus-name {
+    font-size: 24px;
+    color: #f8f8f8;
+    margin-top: 10px;
+  }
+  
+  .bus-info {
+    border-color: #d7cd06;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .bus-seat-number, .bus-type {
+    font-size: 16px;
+    color: #f8f8f8;
+    margin-top: 5px;
+  }
+  
+  .bus-image {
+    width: 99%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .bus-item:hover .bus-image {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  

@@ -1,0 +1,74 @@
+/* General Styling */
+
+
+.login-pagep {
+    
+    align-items: center; /* Center content vertically */
+    height: 90vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    background :linear-gradient(red,green,1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+
+
+/* Main Content Styling */
+.main-contentp {
+    background-image: url('https://wallpapercave.com/wp/wp14834152.webp');
+  background-size: cover;
+  background-position: center;
+
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 70%;
+    
+    padding: 30px;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 5px 4px 8px rgb(6, 238, 18) ;
+}
+.main-contentp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15);
+}
+
+.identity-heading {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Identity Options Buttons */
+.identity-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.identity-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.identity-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 86, 179, 0.3);
+}
+
+/* Footer Styling */
+

@@ -1,0 +1,75 @@
+/* ContactUs.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contactus-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 32px;
+    color: #fffefe;
+    margin-bottom: 18px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    /* background-color:  #2a74d6; */
+    border: 1px solid #d7b818;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 5px 4px 8px rgb(25, 29, 25) ;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 130px;
+    height: 125px;
+    border-radius: 47%;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.card-name {
+    font-size: 20px;
+    color: #121111;
+    margin-bottom: 5px;
+}
+
+.card-role {
+    font-size: 16px;
+    color: #f8f5f5;
+    margin-bottom: 15px;
+}
+
+.card-email,
+.card-phone {
+    font-size: 16px;
+    color: #1d1c1c;
+    margin: 5px 0;
+    word-wrap: break-word;
+}

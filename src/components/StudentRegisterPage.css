@@ -1,0 +1,149 @@
+/* StudentRegisterPage.css */
+.student-register-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes up at least the full height of the viewport */
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 15px 20px;
+    height: 120px;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar:hover {
+    background-color: #333333;
+  }
+  
+  img.logo {
+    width: 70px;
+    height: auto;
+    margin: 20px 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  img.logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  /* Navbar Text Styling */
+  .navbar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .university-name {
+    font-size: 26px;
+    margin: 0;
+    font-weight: bold;
+    color: #ffd54f;
+    line-height: 1.2;
+  }
+  
+  .app-title {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 300;
+    color: #ffd54f;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  /* Underline Effect */
+  .app-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffd54f;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .app-title:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+.student-register-form {
+  background-image: url('https://i.ibb.co.com/rv5KXgS/img.jpg');
+  /* background-image: url('https://wallpapercave.com/wp/wp4470284.jpg'); */
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 40px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.student-register-form input, 
+.student-register-form select {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.student-register-form button {
+  padding: 10px 20px; /* Reduced padding for a normal-sized button */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px; /* Adjust margin to space it nicely */
+  width: auto; /* Allow the button to size itself based on its content */
+  align-self: center; /* Center the button horizontally within the form */
+}
+/* Add this to your StudentRegisterPage.css */
+.captcha-section {
+  margin: 20px 0; /* Adjust space around the captcha */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  width: 100%; /* Ensure it takes the full width */
+}
+
+.captcha-section label {
+  font-size: 16px; /* Adjust font size */
+  margin-bottom: 10px; /* Space between label and captcha */
+}
+
+
+.student-register-form button:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}

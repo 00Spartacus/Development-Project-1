@@ -1,0 +1,51 @@
+.bus-seat-booking {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .seat-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 seats per row */
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .seat-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .seat-button.available {
+    background-color: #90ee90; /* Green for available seats */
+  }
+  
+  .seat-button.occupied {
+    background-color: #ff6b6b; /* Red for occupied seats */
+    cursor: not-allowed;
+  }
+  
+  .seat-button.selected {
+    background-color: #ffd700; /* Yellow for selected seat */
+  }
+  
+  .confirm-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #45a049;
+  }
+  

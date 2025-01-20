@@ -1,0 +1,151 @@
+/* StudentLoginPage.css */
+
+/* General Styles */
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #030303;
+  color: #bfff00;
+} */
+
+/* Main Page Styles */
+.student-login-page {
+  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+/* Navbar Styles */
+
+
+/* Main Content Styles */
+.main-contents {
+  background-image: url('https://wallpapercave.com/wp/wp14834144.webp');
+  background-size: cover;
+  background-position: center;
+  margin-left:  460px;
+  margin-top: 50px;
+  width: 50%;
+  font-style: bold 20px sans-serif white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: white; */
+  padding: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.892);
+  animation: fadeIn 0.5s ease;
+}
+h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Student Login Form Styles */
+.student-login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  height: 100%; /* Ensure the form container fills the height of its parent */
+}
+
+
+.student-login-form input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.student-login-form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.student-login-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.student-login-form button:hover {
+  background-color: #45a049;
+}
+
+/* Register Section Styles */
+.register-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-button {
+  padding: 10px 15px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #007bb5;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #79cef0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer a {
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+/* Error Message Styles */
+.error {
+  color: rgb(246, 250, 246);
+  font-size: 20px;
+  margin-top: 10px;
+}

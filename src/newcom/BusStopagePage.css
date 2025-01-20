@@ -1,0 +1,80 @@
+/* Keyframe animation for sliding in from the right */
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* Move to original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Floating animation for bus-stopage-item */
+  @keyframes floatBusItem {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back to original position */
+    }
+  }
+  
+  .bus-stopage-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .bus-stopages-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .bus-stopages-container.p{
+    color:black;
+  }
+
+  .bus-stopage-item {
+    border: 0.6px solid #5b3b3b;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+    animation: slideInRight 1s ease-out, floatBusItem 2s ease-in-out infinite; /* Apply both animations */
+    opacity: 0; /* Initially hidden */
+    animation-fill-mode: both; /* Ensures the animation persists after completion */
+  }
+  
+  /* Stagger animation delay for a smoother effect */
+  .bus-stopage-item:nth-child(odd) {
+    animation-delay: 0.2s;
+  }
+  
+  .bus-stopage-item:nth-child(even) {
+    animation-delay: 0.4s;
+  }
+  
+  .bus-stopage-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .bus-stopage-name {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .bus-stopage-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
